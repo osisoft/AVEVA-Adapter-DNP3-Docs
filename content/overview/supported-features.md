@@ -22,6 +22,19 @@ You can configure PI Adapter for DNP3 to read data from each of the following po
 
 **<sup>1</sup>Although the `Octet String` point type is supported by the adapter, if the value returned by the outstation contains any `null` characters (for example, ASCII `0x00`), the string is truncated at the first `null` character.
 
-**Note:** Some variations can include a flag octet to indicate status. While the PI Adapter for DNP3 can parse this data, storing this data is not currently supported. In addition, variation zero has a special meaning in DNP3. The adapter can be configured to request a variation zero for static scans, and the outstation should return data in a variation that it prefers. The outstation is not allowed to specify variation zero in its response. The adapter will not request a specific variation for event data, but it is able to parse any of the variations listed above.
+**Note:** Variation zero has a special meaning in DNP3. The adapter can be configured to request a variation zero for static scans, and the outstation should return data in a variation that it prefers. The outstation is not allowed to specify variation zero in its response. The adapter will not request a specific variation for event data, but it is able to parse any of the variations listed above.
+
+## Data Quality - Object Flags
+
+Many of the supported object variations include object flags. PI Adapter for DNP3 will interpret these object flags as Data Quality and will send them as a 1 byte integer for the `Quality` property on the stream.
+
+Each bit in the object flag indicaes a separate condition. Below is a table description of the flags for the supported types. Please refer to the DNP3 Protocol Specification for more information about object flags. 
+
+|        | Bit 7 | Bit 6 | Bit 5 | Bit 4 | Bit 3 | Bit 2 | Bit 1 | Bit 0 | 
+| ------ | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+| `Binary Input` | Value | Reserved | CHATTER_FILTER | LOCAL_FORCED | REMOTE_FORCED | COMM_LOST | RESTART | ONLINE |
+| `Double-Bit Binary Input` | Value | Value | CHATTER_FILTER | LOCAL_FORCED | REMOTE_FORCED | COMM_LOST | RESTART | ONLINE |
+| `Counter` | Reserved | DISCONTINUITY | ROLLOVER | LOCAL_FORCED | REMOTE_FORCED | COMM_LOST | RESTART | ONLINE |
+| `Analog Input` | Reserved | REFERENCE_ERR | OVER_RANGE | LOCAL_FORCED | REMOTE_FORCED | COMM_LOST | RESTART | ONLINE |
 
 
