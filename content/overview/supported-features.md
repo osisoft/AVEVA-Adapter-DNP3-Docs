@@ -20,15 +20,15 @@ You can configure PI Adapter for DNP3 to read data from each of the following po
 | `Analog Input` | 30 | 0, 1, 2, 3, 4, 5, 6 | 32 | 1, 2, 3, 4, 5, 6, 7, 8 | Level 2 |
 | `Octet String`<sup>1</sup> | 110 | 0 - 255 | 111 | 1 - 255 | Not required for any conformance level |
 
-**<sup>1</sup>Although the `Octet String` point type is supported by the adapter, if the value returned by the outstation contains any `null` characters (for example, ASCII `0x00`), the string is truncated at the first `null` character.
+<sup>1</sup>Although the `Octet String` point type is supported by the adapter, if the value returned by the outstation contains any `null` characters (for example, ASCII `0x00`), the string is truncated at the first `null` character.
 
-**Note:** Variation zero has a special meaning in DNP3. The adapter can be configured to request a variation zero for static scans, and the outstation should return data in a variation that it prefers. The outstation is not allowed to specify variation zero in its response. The adapter will not request a specific variation for event data, but it is able to parse any of the variations listed above.
+**Note:** Variation zero has a special meaning in DNP3. You can configure the adapter to request a variation zero for static scans and the outstation should return data in a variation that it prefers. The outstation is not allowed to specify variation zero in its response. The adapter will not request a specific variation for event data, but it is able to parse any of the variations listed above.
 
 ## Data Quality - Object Flags
 
-Many of the supported object variations include object flags. PI Adapter for DNP3 will interpret these object flags as Data Quality and will send them as a 1 byte integer for the `Quality` property on the stream.
+Many of the supported object variations include object flags. PI Adapter for DNP3 interprets these object flags as Data Quality and sends them as a 1 byte integer for the `Quality` property on the stream.
 
-Each bit in the object flag indicaes a separate condition. Below is a table description of the flags for the supported types. Please refer to the DNP3 Protocol Specification for more information about object flags. 
+Each bit in the object flag indicates a separate condition. The following table describes the flags for the supported types. For more information about object flags, refer to the DNP3 Protocol Specification. 
 
 |        | Bit 7 | Bit 6 | Bit 5 | Bit 4 | Bit 3 | Bit 2 | Bit 1 | Bit 0 | 
 | ------ | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
