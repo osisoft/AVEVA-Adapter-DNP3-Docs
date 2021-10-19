@@ -28,7 +28,6 @@ The following features were added in this release of *PI Adapter for DNP3:
 
 <!--*Use bullet style:*-->
 - On-demand data source discovery
-- On-demand and automatic history recovery
 - Collection of data quality information along with data
 
 ## Known issues
