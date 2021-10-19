@@ -20,18 +20,16 @@ For more information, see the [PI Adapter for DNP3 overview](xref:PIAdapterforDN
 
 The following items were resolved in this release of PI Adapter for DNP3:
 
-<!-- Use table style:-->
-Work item | Description
----- | -----------
-*{ work item # }* | *{ item description }*
+There are no bug fixes in this release.
 
 ### Enhancements
 
 The following features were added in this release of *PI Adapter for DNP3:
 
 <!--*Use bullet style:*-->
-* *{ new feature }*
-* *{ new feature }*
+- On-demand data source discovery
+- Support for On-demand and automatic history recovery.
+- Support for collecting data quality information along with data.
 
 ## Known issues
 
