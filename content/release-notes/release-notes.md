@@ -24,7 +24,7 @@ There are no bug fixes in this release.
 
 ### Enhancements
 
-The following features were added in this release of *PI Adapter for DNP3:
+The following features were added in this release of PI Adapter for DNP3:
 
 <!--*Use bullet style:*-->
 - On-demand data source discovery
