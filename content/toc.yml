@@ -11,7 +11,7 @@
 - topicUid: DNP3Configuration
   items: 
   - topicUid: ConfigurationTools
-  - topicUid: SystemComponentsConfiguration
+  - topicUid: PIAdapterForDNP3SystemComponentsConfiguration
     items: 
       - topicUid: SystemAndAdapterConfiguration
   - topicUid: PIAdapterForDNP3DataSourceConfiguration
