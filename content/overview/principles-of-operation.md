@@ -30,7 +30,7 @@ The DNP3 adapter creates types at startup. One stream is created for each select
 | ------------- | --------- | -----------
 | `Timestamp` | DateTime | Timestamp of the value update for the DNP point
 | `Value` | Specified in the data selection configuration | Value of the DNP point
-| `Quality` | Byte | Data quality of the given DNP3 item update. Quality values are defined in [Supported Features] (xref:SupportedFeatures). |
+| `Quality` | Byte | Data quality of the given DNP3 item update. Quality values are defined in [Supported Features](xref:PIAdapterForDNP3SupportedFeatures). |
 
 **Note:** All streams contain the `Quality` property except if the DNP3 Point Type is `Octet String`.
 
