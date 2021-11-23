@@ -19,9 +19,9 @@ Docker is a set of tools that can be used on Linux to manage application deploym
 	```bash
 	#!/bin/sh
 	if [ -z $portnum ] ; then
-			exec /DNP3_linux-arm/OSIsoft.Data.System.Host
+			exec /PI-Adapter-for-DNP3_1.1.0.103-arm_/OSIsoft.Data.System.Host
 	else
-			exec /DNP3_linux-arm/OSIsoft.Data.System.Host --port:$portnum
+			exec /PI-Adapter-for-DNP3_1.1.0.103-arm_/OSIsoft.Data.System.Host --port:$portnum
 	fi
 	```
 	
@@ -30,9 +30,9 @@ Docker is a set of tools that can be used on Linux to manage application deploym
 	```bash
 	#!/bin/sh
 	if [ -z $portnum ] ; then
-			exec /DNP3_linux-arm64/OSIsoft.Data.System.Host
+			exec /PI-Adapter-for-DNP3_1.1.0.103-arm64_/OSIsoft.Data.System.Host
 	else
-			exec /DNP3_linux-arm64/OSIsoft.Data.System.Host --port:$portnum
+			exec /PI-Adapter-for-DNP3_1.1.0.103-arm64_/OSIsoft.Data.System.Host --port:$portnum
 	fi
 	```
 	
@@ -41,9 +41,9 @@ Docker is a set of tools that can be used on Linux to manage application deploym
 	```bash
 	#!/bin/sh
 	if [ -z $portnum ] ; then
-			exec /DNP3_linux-x64/OSIsoft.Data.System.Host
+			exec /PI-Adapter-for-DNP3_1.1.0.103-x64_/OSIsoft.Data.System.Host
 	else
-			exec /DNP3_linux-x64/OSIsoft.Data.System.Host --port:$portnum
+			exec /PI-Adapter-for-DNP3_1.1.0.103-x64_/OSIsoft.Data.System.Host --port:$portnum
 	fi
 	```
 	
@@ -63,7 +63,7 @@ Docker is a set of tools that can be used on Linux to manage application deploym
 	RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y ca-certificates libicu60 libssl1.1 curl
 	COPY dnp3dockerstart.sh /
 	RUN chmod +x /dnp3dockerstart.sh
-	ADD ./DNP3_linux-arm.tar.gz .
+	ADD ./PI-Adapter-for-DNP3_1.1.0.103-arm_.tar.gz .
 	ENTRYPOINT ["/dnp3dockerstart.sh"]
 	```
 	
@@ -75,7 +75,7 @@ Docker is a set of tools that can be used on Linux to manage application deploym
 	RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y ca-certificates libicu66 libssl1.1 curl
 	COPY dnp3dockerstart.sh /
 	RUN chmod +x /dnp3dockerstart.sh
-	ADD ./DNP3_linux-arm64.tar.gz .
+	ADD ./PI-Adapter-for-DNP3_1.1.0.103-arm64_.tar.gz .
 	ENTRYPOINT ["/dnp3dockerstart.sh"]
 	```
 
@@ -87,11 +87,11 @@ Docker is a set of tools that can be used on Linux to manage application deploym
 	RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y ca-certificates libicu66 libssl1.1 curl
 	COPY dnp3dockerstart.sh /
 	RUN chmod +x /dnp3dockerstart.sh
-	ADD ./DNP3_linux-x64.tar.gz .
+	ADD ./PI-Adapter-for-DNP3_1.1.0.103-x64_.tar.gz .
 	ENTRYPOINT ["/dnp3dockerstart.sh"]
 	```
 
-2. Copy the `DNP3_linux-\<platform>.tar.gz` file to the same directory as the `Dockerfile`.
+2. Copy the `PI-Adapter-for-DNP3_<versionNumber>-<platform>_.tar.gz` file to the same directory as the `Dockerfile`.
 
 3. Copy the `dnp3dockerstart.sh` script to the same directory as the `Dockerfile`.
 
