@@ -50,14 +50,7 @@ If the stream ID is not specified, the adapter uses the `DefaultStreamIdPattern`
 
 ### Discovery
 
-The DNP3 adapter can discover points on your DNP3 outstation by performing an integrity scan. For more information, see [Integrity scans](#integrity-scans).
-Discovery populates your data selection configuration with items that represent points on the outstation. These items are unselected by default, so you can make changes to these items before you select them. The adapter can only discover points that are assigned to Class 0, Class 1, Class 2, or Class 3 on the outstation. Discovery can be demanding in terms of bandwidth and outstation resources, so the adapter only performs discovery for an outstation when the following criteria are met:
-
-- The outstation is configured in the data source configuration.
-- The adapter is configured to perform a startup integrity scan for that outstation.
-- The data selection configuration contains no items that correlate to that outstation, either selected or unselected.
-
-To discover a new outstation, add the outstation to the data source configuration and configure a periodic integrity scan or a scan on startup. The adapter uses the startup integrity scan as a means for discovery. To configure a new outstation without triggering a discovery, you can add one or more selection items to correspond to the outstation. The items can be selected or unselected. Alternatively, you can configure the outstation behavior so that no startup integrity scan is performed. Without a startup integrity scan, discovery is not be possible.
+Discovery for the DNP3 adapter may be configured using the [Discovery](#TODO-link-to-Discovery-page) configuration. The discovery process will create a data selection item for each DNP point that is assigned to Class 0, Class 1, Class 2, or Class 3 on the outstation. Discovery is performed via an [integrity scan](#integrity-scans) which may be demanding in terms of bandwidth and outstation resources. Data collected with this scan for points that already have a corresponding data selection item will be sent to the data endpoint(s). However, data that is returned for points that are not already configured as data selection items will be discarded. 
 
 ## Data collection
 
@@ -90,7 +83,7 @@ In addition to the event scans above, the DNP3 adapter can be configured to rece
 
 ### Integrity scans
 
-The DNP3 adapter can be configured to perform an integrity scan on startup, when the outstation's event buffer overflows, at a defined interval, or any combination of the three. During an integrity scan, the adapter polls the outstations for events and then the current value of all points that are assigned to one of the event classes (or Class 0).
+The DNP3 adapter can be configured to perform an integrity scan on startup, when the outstation's event buffer overflows, at a defined interval, or any combination of the three. An integrity scan is also used during the [discovery](#discovery) process. During an integrity scan, the adapter polls the outstations for events and then the current value of all points that are assigned to one of the event classes (or Class 0).
 The adapter performs an integrity scan by polling `Object Group 60`. If bandwidth or outstation performance is a concern, carefully consider the value of an integrity scan, as the outstation can respond with data for many more points than the adapter is configured to collect data for. The adapter simply discards any data that it receives without a corresponding data selection item. To retrieve the current value of any points not assigned to an event class, the adapter needs to perform a static scan.
 
-If a startup integrity scan is configured, it will run whenever the adapter is started or whenever a shutdown is indicated by the outstation's IIN bits. It may also be used for discovery. Alternatively, if no startup integrity scan is configured, but an integrity scan at a set interval is defined, then the first integrity scan will still be performed when the adapter is started. In this scenario, the first integrity scan will not be used for discovery, because a startup integrity scan was not configured. 
+If a startup integrity scan is configured, it will run whenever the adapter is started or whenever a shutdown is indicated by the outstation's IIN bits. It may also be used for discovery. Alternatively, if no startup integrity scan is configured, but an integrity scan at a set interval is defined, then the first integrity scan will still be performed when the adapter is started. 
