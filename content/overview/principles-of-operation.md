@@ -50,7 +50,7 @@ If the stream ID is not specified, the adapter uses the `DefaultStreamIdPattern`
 
 ### Discovery
 
-Discovery for the DNP3 adapter may be configured using the [Discovery configuration](#DiscoveryConfiguration). The discovery process creates a data selection item for each DNP point assigned to either Class 0, Class 1, Class 2, or Class 3 on the outstation. Discovery is performed by an [integrity scan](#integrity-scans) which may be demanding in terms of bandwidth and outstation resources. Data collected with this scan for points that have a corresponding data selection item is sent to the data endpoint(s). However, data returned for points that are not configured as data selection items are only used to populate the discovery results and are not sent to the data endpoint(s). 
+Discovery for the DNP3 adapter may be configured using the [Discovery configuration](xref:DiscoveryConfiguration). The discovery process creates a data selection item for each DNP point assigned to either Class 0, Class 1, Class 2, or Class 3 on the outstation. Discovery is performed by an [integrity scan](#integrity-scans) which may be demanding in terms of bandwidth and outstation resources. Data collected with this scan for points that have a corresponding data selection item is sent to the data endpoint(s). However, data returned for points that are not configured as data selection items are only used to populate the discovery results and are not sent to the data endpoint(s). 
 
 ## Data collection
 
