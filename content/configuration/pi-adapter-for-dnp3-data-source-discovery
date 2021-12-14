@@ -13,7 +13,7 @@ A discovery against the data source of a DNP3 adapter allows you to specify the 
 The string of the **query** parameter may contain string items in the following form: <br>`OutstationIds=<id>,<id2>,<id3>,...`<br><br>
 | String item      | Required | Description |
 |------------------|----------|-------------|
-| **OutstationIds**  | Optional |  The outstation IDs that should be discovered.<br>**Note:** To specify multiple outstation IDs in the query, separate the outstation IDs with a comma. If **OutstationIds** is not specified, the adapter will perform discovery for each outstation in the data source. |
+| **OutstationIds**  | Optional |  The outstation IDs to be discovered.<br>**Note:** To specify multiple outstation IDs in the query, separate the outstation IDs with a comma. If **OutstationIds** is not specified, the adapter will perform discovery for each outstation in the data source. |
 
 **Note:** An outstation id is a user-defined identifier for an outstation in the data source configuration.
 
