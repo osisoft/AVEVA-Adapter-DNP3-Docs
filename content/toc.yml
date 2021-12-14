@@ -13,22 +13,22 @@
   - topicUid: ConfigurationTools
   - topicUid: PIAdapterForDNP3SystemComponentsConfiguration
     items: 
-      - topicUid: SystemAndAdapterConfiguration
+    - topicUid: SystemAndAdapterConfiguration
   - topicUid: PIAdapterForDNP3DataSourceConfiguration
   - topicUid: DiscoveryConfiguration
     items:
-      - topicUid: PIAdapterForDNP3DataSourceDiscovery
+    - topicUid: PIAdapterForDNP3DataSourceDiscovery
   - topicUid: SchedulesConfiguration
   - topicUid: PIAdapterForDNP3DataSelectionConfiguration
   - topicUid: DataFiltersConfiguration
   - topicUid: GeneralConfiguration
     items:
-      - topicUid: AdapterMetadata
+    - topicUid: AdapterMetadata
   - topicUid: BufferingConfiguration
   - topicUid: LoggingConfiguration
   - topicUid: EgressEndpointsConfiguration
     items:
-      - topicUid: PrepareEgressDestinations
+    - topicUid: PrepareEgressDestinations
   - topicUid: HealthEndpointConfiguration
   - topicUid: PIAdapterForDNP3ConfigurationExamples
 - topicUid: Administration
@@ -39,10 +39,10 @@
   - topicUid: RetrieveProductVersionInformation
 - topicUid: HealthAndDiagnostics
   items:
-    - topicUid: AdapterHealth
-      items:
-      - topicUid: DeviceStatus
-      - topicUid: NextHealthMessageExpected
+  - topicUid: AdapterHealth
+    items:
+    - topicUid: DeviceStatus
+    - topicUid: NextHealthMessageExpected
     - topicUid: AdapterDiagnostics
       items:
       - topicUid: System
@@ -52,6 +52,6 @@
       - topicUid: EgressDiagnostics
 - topicUid: TroubleshootTheAdapter
   items:
-    - topicUid: TroubleshootPIAdapterForDNP3
+  - topicUid: TroubleshootPIAdapterForDNP3
 - topicUid: ReleaseNotes
 - topicUid: TechnicalSupportAndFeedback
