@@ -15,6 +15,9 @@
     items: 
       - topicUid: SystemAndAdapterConfiguration
   - topicUid: PIAdapterForDNP3DataSourceConfiguration
+ - topicUid: DiscoveryConfiguration
+    items:
+      - topicUid: PIAdapterForDNP3DataSourceDiscovery
   - topicUid: SchedulesConfiguration
   - topicUid: PIAdapterForDNP3DataSelectionConfiguration
   - topicUid: DataFiltersConfiguration
