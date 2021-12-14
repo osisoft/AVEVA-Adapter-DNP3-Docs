@@ -65,7 +65,7 @@ The query parameter of the DNP3 component must be specified as shown in this exa
 
 ### DNP3 discovered selection items
 
-The following items are an example of what might be discovered on Outstation1 and Outstation2. This will vary based on what is returned by the integrity scan used for discovery. 
+The following items are an example of what might be discovered on _Outstation1_ and _Outstation2_. This will vary based on what is returned by the integrity scan used for discovery. 
 
 ```json
 [
