@@ -59,9 +59,8 @@ To create a Docker container that runs the adapter, follow the instructions belo
 
     **Note:** `Dockerfile` is the required name of the file. Use the variation according to your operating system:
 
-
     **ARM32**
-    
+
     ```dockerfile
     FROM ubuntu
     WORKDIR /
@@ -83,8 +82,8 @@ To create a Docker container that runs the adapter, follow the instructions belo
     ADD ./PI-Adapter-for-DNP3_1.1.0.103-arm64_.tar.gz .
     ENTRYPOINT ["/dnp3dockerstart.sh"]
     ```
-    
-	**AMD64 (x64)**
+
+    **AMD64 (x64)**
 
     ```dockerfile
     FROM ubuntu
