@@ -1,0 +1,57 @@
+- topicUid: PIAdapterforDNP3Overview
+  items: 
+  - topicUid: PIAdapterForDNP3PrinciplesOfOperation
+  - topicUid: PIAdapterForDNP3SupportedFeatures
+- topicUid: Installation
+  items: 
+  - topicUid: SystemRequirements
+  - topicUid: InstallTheAdapter
+  - topicUid: InstallUsingDocker
+  - topicUid: UninstallTheAdapter
+- topicUid: DNP3Configuration
+  items: 
+  - topicUid: ConfigurationTools
+  - topicUid: PIAdapterForDNP3SystemComponentsConfiguration
+    items: 
+    - topicUid: SystemAndAdapterConfiguration
+  - topicUid: PIAdapterForDNP3DataSourceConfiguration
+  - topicUid: DiscoveryConfiguration
+    items:
+    - topicUid: PIAdapterForDNP3DataSourceDiscovery
+  - topicUid: SchedulesConfiguration
+  - topicUid: PIAdapterForDNP3DataSelectionConfiguration
+  - topicUid: DataFiltersConfiguration
+  - topicUid: GeneralConfiguration
+    items:
+    - topicUid: AdapterMetadata
+  - topicUid: BufferingConfiguration
+  - topicUid: LoggingConfiguration
+  - topicUid: EgressEndpointsConfiguration
+    items:
+    - topicUid: PrepareEgressDestinations
+  - topicUid: HealthEndpointConfiguration
+  - topicUid: PIAdapterForDNP3ConfigurationExamples
+- topicUid: Administration
+  items:
+  - topicUid: StartAndStopAnAdapter
+  - topicUid: StartAndStopIngressComponent
+  - topicUid: DeleteAnAdapterComponent
+  - topicUid: RetrieveProductVersionInformation
+- topicUid: HealthAndDiagnostics
+  items:
+  - topicUid: AdapterHealth
+    items:
+    - topicUid: DeviceStatus
+    - topicUid: NextHealthMessageExpected
+    - topicUid: AdapterDiagnostics
+      items:
+      - topicUid: System
+      - topicUid: StreamCount
+      - topicUid: IORate
+      - topicUid: ErrorRate
+      - topicUid: EgressDiagnostics
+- topicUid: TroubleshootTheAdapter
+  items:
+  - topicUid: TroubleshootPIAdapterForDNP3
+- topicUid: ReleaseNotes
+- topicUid: TechnicalSupportAndFeedback
