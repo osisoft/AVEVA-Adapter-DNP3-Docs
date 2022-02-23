@@ -6,7 +6,8 @@
   items: 
   - topicUid: SystemRequirements
   - topicUid: InstallTheAdapter
-  - topicUid: InstallPIAdapterForDNP3UsingDocker
+  - topicUid: InstallUsingDocker
+  - topicUid: UpgradeTheAdapter
   - topicUid: UninstallTheAdapter
 - topicUid: DNP3Configuration
   items: 
