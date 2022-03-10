@@ -45,7 +45,7 @@
     items:
     - topicUid: DeviceStatus
     - topicUid: NextHealthMessageExpected
-    - topicUid: AdapterDiagnostics
+  - topicUid: AdapterDiagnostics
       items:
       - topicUid: System
       - topicUid: StreamCount
