@@ -11,6 +11,7 @@
   - topicUid: UninstallTheAdapter
 - topicUid: DNP3Configuration
   items: 
+  - topicUid: PIAdapterForDNP3Security
   - topicUid: ConfigurationTools
   - topicUid: PIAdapterForDNP3SystemComponentsConfiguration
     items: 
