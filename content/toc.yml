@@ -47,12 +47,12 @@
     - topicUid: DeviceStatus
     - topicUid: NextHealthMessageExpected
   - topicUid: AdapterDiagnostics
-      items:
-      - topicUid: System
-      - topicUid: StreamCount
-      - topicUid: IORate
-      - topicUid: ErrorRate
-      - topicUid: EgressDiagnostics
+    items:
+    - topicUid: System
+    - topicUid: StreamCount
+    - topicUid: IORate
+    - topicUid: ErrorRate
+    - topicUid: EgressDiagnostics
 - topicUid: TroubleshootTheAdapter
   items:
   - topicUid: TroubleshootPIAdapterForDNP3
