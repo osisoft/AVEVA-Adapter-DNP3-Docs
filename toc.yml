@@ -1,6 +1,0 @@
-- name: PI Adapter for DNP3 versions
-  dropdown: true
-  items:
-  - name: PI Adapter for DNP3 1.1
-    href: content/
-    homepage: content/index.md
