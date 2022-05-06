@@ -1,1 +1,1 @@
-PI-Adapter-for-DNP3_1.1.0.103
+<INSTALLER_NAME>

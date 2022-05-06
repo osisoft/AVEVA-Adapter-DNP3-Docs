@@ -22,14 +22,18 @@ Complete the procedure corresponding to your specific operating system to uninst
 
 1. To delete PI Adapter software from a Linux device, open a terminal window and run the following command:
 
+    <!-- PRERELEASE REMINDER: Customize for {adapter-name}. Example:BACnet, EventHubs, StructuredDataFiles, etc -->
+
     ```bash
-    sudo apt remove pi.adapter.DNP3 
+    sudo apt remove pi.adapter.{adapter-name} 
     ```
 
 2. Optional: To delete data, configuration, and log files, run the following command:
 
+    <!-- PRERELEASE REMINDER: Customize for {adapter-name}. Example:BACnet, EventHubs, StructuredDataFiles, etc -->
+
     ```bash
-    sudo rm -r /usr/share/OSIsoft/Adapters/DNP3
+    sudo rm -r /usr/share/OSIsoft/Adapters/{adapter-name}
     ```
     
     This deletes all data processed by the adapter, in addition to the configuration and log files.

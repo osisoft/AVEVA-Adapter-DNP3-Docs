@@ -1,1 +1,1 @@
-dnp3dockerstart.sh
+<script_name.sh>

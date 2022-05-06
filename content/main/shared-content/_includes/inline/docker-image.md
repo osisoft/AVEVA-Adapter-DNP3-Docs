@@ -1,1 +1,1 @@
-dnp3adapter
+<script_name.sh>

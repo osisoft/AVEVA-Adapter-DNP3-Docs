@@ -1,1 +1,1 @@
-DNP3
+<Componenent Type>

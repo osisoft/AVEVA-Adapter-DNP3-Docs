@@ -1,1 +1,1 @@
-PI Adapter for DNP3
+<PRODUCT_NAME>
