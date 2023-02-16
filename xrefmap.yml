@@ -1,84 +1,12 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: AdapterDiagnostics
-  name: Diagnostics
-  href: content/main/shared-content/diagnostics/diagnostics.html
-- uid: AdapterDiagnosticsOld
-  name: Adapter diagnostics
-  href: content/main/shared-content/ARCHIVE/Adapter%20diagnostics_old.html
-- uid: AdapterHealth
-  name: Health
-  href: content/main/shared-content/health/health.html
-- uid: AdapterMetadata
-  name: Metadata
-  href: content/main/shared-content/metadata/metadata.html
-- uid: Administration
-  name: Administration
-  href: content/main/shared-content/administration/administration.html
-- uid: BufferingConfiguration
-  name: Buffering
-  href: content/main/shared-content/configuration/buffering.html
-- uid: ConfigurationTools
-  name: Configuration tools
-  href: content/main/shared-content/configuration/configuration-tools.html
-- uid: DataFiltersConfiguration
-  name: Data filters
-  href: content/main/shared-content/configuration/data-filters.html
-- uid: DeleteAnAdapterComponent
-  name: Delete an adapter component
-  href: content/main/shared-content/administration/delete-an-adapter-component.html
-- uid: DeviceStatus
-  name: Device status
-  href: content/main/shared-content/health/device-status.html
-- uid: DiagnosticsConfiguration
-  name: Diagnostics configuration
-  href: content/main/shared-content/ARCHIVE/Diagnostics%20configuration.html
 - uid: DNP3Configuration
   name: Configuration
   href: content/configuration/configuration.html
-- uid: Egress_DataEndpoints_schema
-  name: Egress endpoint configuration schema
-  href: content/main/shared-content/ARCHIVE/Egress_DataEndpoints_schema.html
-- uid: EgressDiagnostics
-  name: Egress
-  href: content/main/shared-content/diagnostics/egress.html
-- uid: EgressEndpointsConfiguration
-  name: Egress endpoints
-  href: content/main/shared-content/configuration/egress-endpoints.html
-- uid: ErrorRate
-  name: Error rate
-  href: content/main/shared-content/diagnostics/error-rate.html
-- uid: GeneralConfiguration
-  name: Diagnostics and metadata
-  href: content/main/shared-content/configuration/diagnostics-and-metadata.html
-- uid: HealthAndDiagnostics
-  name: Health and Diagnostics
-  href: content/main/shared-content/health/health-and-diagnostics.html
-- uid: HealthEndpointConfiguration
-  name: Health endpoints
-  href: content/main/shared-content/configuration/health-endpoints.html
-- uid: Installation
-  name: Installation
-  href: content/main/shared-content/installation/installation.html
 - uid: InstallPIAdapterForDNP3UsingDocker
   name: Installation using Docker
   href: content/installation/installation-using-docker.html
-- uid: InstallTheAdapter
-  name: Install the adapter
-  href: content/main/shared-content/installation/install-the-adapter.html
-- uid: IntroductionToPIAdapters
-  name: Introduction to PI Adapters
-  href: content/main/shared-content/introduction-to-pi-adapters.html
-- uid: IORate
-  name: IO rate
-  href: content/main/shared-content/diagnostics/io-rate.html
-- uid: LoggingConfiguration
-  name: Logging
-  href: content/main/shared-content/configuration/logging.html
-- uid: NextHealthMessageExpected
-  name: Next health message expected
-  href: content/main/shared-content/health/next-health-message-expected.html
 - uid: PIAdapterForDNP3ConfigurationExamples
   name: Configuration examples
   href: content/configuration/configuration-examples.html
@@ -97,54 +25,15 @@ references:
 - uid: PIAdapterForDNP3SupportedFeatures
   name: Supported features
   href: content/overview/supported-features.html
-- uid: PIAdapterUsers
-  name: PI Adapter users
-  href: content/main/shared-content/pi-adapter-users.html
-- uid: PrepareEgressDestinations
-  name: Prepare egress destinations
-  href: content/main/shared-content/configuration/egress-endpoints/prepare-egress-destinations.html
-- uid: releaseNotes
-  name: Release notes
-  href: content/main/Templates/Markdown%20Release%20Notes%20template-V1.html
+- uid: PIAdapterForDNP3SystemComponentsConfiguration
+  name: System components
+  href: content/configuration/system-components.html
 - uid: ReleaseNotes
   name: Release notes
   href: content/release-notes/release-notes.html
-- uid: RetrieveProductVersionInformation
-  name: Retrieve product version information
-  href: content/main/shared-content/administration/retrieve-product-version-information.html
-- uid: SchedulesConfiguration
-  name: Schedules
-  href: content/main/shared-content/configuration/schedules.html
-- uid: StartAndStopAnAdapter
-  name: Start and stop an adapter
-  href: content/main/shared-content/administration/start-and-stop-an-adapter.html
-- uid: StartAndStopIngressComponent
-  name: Start and stop ingress component
-  href: content/main/shared-content/administration/start-and-stop-ingress-component.html
-- uid: StreamCount
-  name: Stream count
-  href: content/main/shared-content/diagnostics/stream-count.html
-- uid: System
-  name: System
-  href: content/main/shared-content/diagnostics/system.html
-- uid: SystemAndAdapterConfiguration
-  name: System and adapter
-  href: content/main/shared-content/configuration/system-and-adapter.html
-- uid: SystemComponentsConfiguration
-  name: System components
-  href: content/main/shared-content/configuration/system-components.html
 - uid: SystemRequirements
   name: System requirements
   href: content/installation/system-requirements.html
-- uid: TechnicalSupportAndFeedback
-  name: Technical support and feedback
-  href: content/main/shared-content/technical-support-and-feedback.html
 - uid: TroubleshootPIAdapterForDNP3
   name: Troubleshoot PI Adapter for DNP3
   href: content/troubleshooting/troubleshoot-pi-adapter-for-dnp3.html
-- uid: TroubleshootTheAdapter
-  name: Troubleshooting
-  href: content/main/shared-content/troubleshooting/troubleshooting.html
-- uid: UninstallTheAdapter
-  name: Uninstall the adapter
-  href: content/main/shared-content/installation/uninstall-the-adapter.html

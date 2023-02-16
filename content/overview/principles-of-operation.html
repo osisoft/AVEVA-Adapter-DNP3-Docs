@@ -8,7 +8,7 @@
     <title>Principles of operation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Principles of operation ">
-    <meta name="generator" content="docfx 2.56.5.0">
+    <meta name="generator" content="docfx 2.59.1.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -89,9 +89,9 @@
 <li>Data selection: Select the DNP points on the outstations you want the adapter to collect for data.</li>
 <li>Logging: Set up the logging attributes to manage the adapter logging behavior.</li>
 </ul>
-<p>For more information, see <a class="xref" href="../configuration/data-source.html">PI Adapter for DNP3 data source configuration</a>, <a class="xref" href="../configuration/data-selection.html">PI Adapter for DNP3 data selection configuration</a>, and <a class="xref" href="../main/shared-content/configuration/logging.html">Logging configuration</a>.</p>
+<p>For more information, see <a class="xref" href="../configuration/data-source.html">PI Adapter for DNP3 data source configuration</a>, <a class="xref" href="../configuration/data-selection.html">PI Adapter for DNP3 data selection configuration</a>, and <a href="xref:LoggingConfiguration">Logging configuration</a>.</p>
 <h2 id="stream-creation">Stream creation</h2>
-<p>The DNP3 adapter creates types at startup. One stream is created for each selected DNP point represented by an item in the data selection configuration. Each stream contains two properties:</p>
+<p>The DNP3 adapter creates types at startup. One stream is created for each selected DNP point represented by an item in the data selection configuration. Each stream contains three properties:</p>
 <table>
 <thead>
 <tr>
@@ -111,8 +111,14 @@
 <td>Specified in the data selection configuration</td>
 <td>Value of the DNP point</td>
 </tr>
+<tr>
+<td><code>Quality</code></td>
+<td>Byte</td>
+<td>Data quality of the given DNP3 item update. Quality values are defined in <a href="xref:SupportedFeatures">Supported Features</a>.</td>
+</tr>
 </tbody>
 </table>
+<p><strong>Note:</strong> All streams contain the <code>Quality</code> property except if the DNP3 Point Type is <code>Octet String</code>.</p>
 <p>Certain metadata are sent with each stream created. The following metadata are common for every adapter type:</p>
 <ul>
 <li><strong>ComponentID</strong>: Specifies the data source, for example, <em>DNP3_1</em></li>

@@ -8,7 +8,7 @@
     <title>Troubleshoot PI Adapter for DNP3 </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Troubleshoot PI Adapter for DNP3 ">
-    <meta name="generator" content="docfx 2.56.5.0">
+    <meta name="generator" content="docfx 2.59.1.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -118,7 +118,7 @@
 <li><strong>DataFilterId</strong> - If configured, the referenced data filter exists.<br> A non-existent or incorrect DataFilterId  means that data filtering is not active.</li>
 </ul>
 </li>
-<li><p>Navigate to <a class="xref" href="../main/shared-content/configuration/egress-endpoints.html">egress endpoints configuration</a>. For each configured endpoint, verify that the <strong>Endpoint</strong> and authentication properties are correct.</p>
+<li><p>Navigate to <a href="xref:EgressEndpointsConfiguration">egress endpoints configuration</a>. For each configured endpoint, verify that the <strong>Endpoint</strong> and authentication properties are correct.</p>
 <ul>
 <li>For a PI server or EDS endpoint, verify <strong>UserName</strong> and <strong>Password</strong>.</li>
 <li>For an OCS endpoint, verify <strong>ClientId</strong> and <strong>ClientSecret</strong>.</li>
@@ -129,7 +129,7 @@
 <p>Perform the following steps to verify active connections to the data source and egress endpoints.</p>
 <ol>
 <li>Start PI Web API and verify that the PI point values are updating or start OCS and verify that the stream values are updating.</li>
-<li>If configured, use a health endpoint to determine the status of the adapter.<br>For more information, see <a class="xref" href="../main/shared-content/health/health-and-diagnostics.html">Health and diagnostics</a>.</li>
+<li>If configured, use a health endpoint to determine the status of the adapter.<br>For more information, see <a href="xref:HealthAndDiagnostics">Health and diagnostics</a>.</li>
 </ol>
 <h2 id="check-logs">Check logs</h2>
 <p>Perform the following steps to view the adapter and endpoint logs to isolate issues for resolution.</p>
@@ -137,7 +137,7 @@
 <li>Navigate to the logs directory:<br>
  Windows: <code>%ProgramData%\OSIsoft\Adapters\DNP3\Logs</code><br>
  Linux: <code>/usr/share/OSIsoft/Adapters/DNP3/Logs</code>.</li>
-<li>Optional: Change the log level of the adapter to receive more information and context.<br>For more information, see <a class="xref" href="../main/shared-content/configuration/logging.html">Logging configuration</a>.</li>
+<li>Optional: Change the log level of the adapter to receive more information and context.<br>For more information, see <a href="xref:LoggingConfiguration">Logging configuration</a>.</li>
 </ol>
 </article>
           </div>

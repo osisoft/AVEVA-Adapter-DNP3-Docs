@@ -8,7 +8,7 @@
     <title>Supported features </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Supported features ">
-    <meta name="generator" content="docfx 2.56.5.0">
+    <meta name="generator" content="docfx 2.59.1.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -136,8 +136,72 @@
 </tr>
 </tbody>
 </table>
-<p>**<sup>1</sup>Although the <code>Octet String</code> point type is supported by the adapter, if the value returned by the outstation contains any <code>null</code> characters (for example, ASCII <code>0x00</code>), the string is truncated at the first <code>null</code> character.</p>
-<p><strong>Note:</strong> Some variations can include a flag octet to indicate status. While the PI Adapter for DNP3 can parse this data, storing this data is not currently supported. In addition, variation zero has a special meaning in DNP3. The adapter can be configured to request a variation zero for static scans, and the outstation should return data in a variation that it prefers. The outstation is not allowed to specify variation zero in its response. The adapter will not request a specific variation for event data, but it is able to parse any of the variations listed above.</p>
+<p><sup>1</sup>Although the <code>Octet String</code> point type is supported by the adapter, if the value returned by the outstation contains any <code>null</code> characters (for example, ASCII <code>0x00</code>), the string is truncated at the first <code>null</code> character.</p>
+<p><strong>Note:</strong> Variation zero has a special meaning in DNP3. You can configure the adapter to request a variation zero for static scans and the outstation should return data in a variation that it prefers. The outstation is not allowed to specify variation zero in its response. The adapter will not request a specific variation for event data, but it is able to parse any of the variations listed above.</p>
+<h2 id="data-quality---object-flags">Data Quality - Object Flags</h2>
+<p>Many of the supported object variations include object flags. PI Adapter for DNP3 interprets these object flags as Data Quality and sends them as a 1 byte integer for the <code>Quality</code> property on the stream.</p>
+<p>Each bit in the object flag indicates a separate condition. The following table describes the flags for the supported types. For more information about object flags, refer to the DNP3 Protocol Specification. </p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Bit 7</th>
+<th>Bit 6</th>
+<th>Bit 5</th>
+<th>Bit 4</th>
+<th>Bit 3</th>
+<th>Bit 2</th>
+<th>Bit 1</th>
+<th>Bit 0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Binary Input</code></td>
+<td>Value</td>
+<td>Reserved</td>
+<td>CHATTER_FILTER</td>
+<td>LOCAL_FORCED</td>
+<td>REMOTE_FORCED</td>
+<td>COMM_LOST</td>
+<td>RESTART</td>
+<td>ONLINE</td>
+</tr>
+<tr>
+<td><code>Double-Bit Binary Input</code></td>
+<td>Value</td>
+<td>Value</td>
+<td>CHATTER_FILTER</td>
+<td>LOCAL_FORCED</td>
+<td>REMOTE_FORCED</td>
+<td>COMM_LOST</td>
+<td>RESTART</td>
+<td>ONLINE</td>
+</tr>
+<tr>
+<td><code>Counter</code></td>
+<td>Reserved</td>
+<td>DISCONTINUITY</td>
+<td>ROLLOVER</td>
+<td>LOCAL_FORCED</td>
+<td>REMOTE_FORCED</td>
+<td>COMM_LOST</td>
+<td>RESTART</td>
+<td>ONLINE</td>
+</tr>
+<tr>
+<td><code>Analog Input</code></td>
+<td>Reserved</td>
+<td>REFERENCE_ERR</td>
+<td>OVER_RANGE</td>
+<td>LOCAL_FORCED</td>
+<td>REMOTE_FORCED</td>
+<td>COMM_LOST</td>
+<td>RESTART</td>
+<td>ONLINE</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           
