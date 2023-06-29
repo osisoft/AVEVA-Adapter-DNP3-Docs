@@ -188,8 +188,8 @@ The following JSON samples provide examples for all configurations available for
         "password": "PASSWORD"
       },
       {
-        "id": "OCS Endpoint",
-        "endpoint": "https://OCSEndpoint/omf",
+        "id": "ADH Endpoint",
+        "endpoint": "https://ADHEndpoint/omf",
         "clientId": "CLIENTID",
         "clientSecret": "CLIENTSECRET"
       }

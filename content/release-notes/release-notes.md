@@ -9,7 +9,7 @@ Adapter Framework [!include[framework-version](../main/shared-content/_includes/
 
 ## Overview
 
-PI Adapter for DNP3 collects time series data and relevant metadata from DNP3 compliant outstations and sends it to configured OMF (OSIsoft Message Format) endpoints in OSIsoft Cloud Services or PI Servers. PI Adapter for DNP3 can also collect health and diagnostics information. It supports buffering, static and event data collection, automatic discovery of available data items on a data source, and various Windows and Linux-based operating systems as well as containerization.
+PI Adapter for DNP3 collects time series data and relevant metadata from DNP3 compliant outstations and sends it to configured OMF (OSIsoft Message Format) endpoints in AVEVA Data Hub or PI Servers. PI Adapter for DNP3 can also collect health and diagnostics information. It supports buffering, static and event data collection, automatic discovery of available data items on a data source, and various Windows and Linux-based operating systems as well as containerization.
 
 For more information, see the [PI Adapter for DNP3 overview](xref:PIAdapterforDNP3Overview).
 
