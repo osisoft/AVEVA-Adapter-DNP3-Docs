@@ -4,7 +4,7 @@ uid: PIAdapterforDNP3Overview
 
 # Overview
 
-PI Adapter for DNP3 is a data-collection component that transfers time-series data from source devices to OMF (OSIsoft Message Format) endpoints in AVEVA Data Hub or PI Servers. DNP3 is a communication protocol common in SCADA networks. The protocol is maintained by the DNP Users Group, and defined by IEEE Std 1815-2012. The adapter adheres to this standard and operates as a DNP3-L1 compliant master station, which communicates with compliant outstations through TCP/IP.
+AVEVA Adapter for DNP3 is a data-collection component that transfers time-series data from source devices to OMF (OSIsoft Message Format) endpoints in AVEVA Data Hub or AVEVA PI Servers. DNP3 is a communication protocol common in SCADA networks. The protocol is maintained by the DNP Users Group, and defined by IEEE Std 1815-2012. The adapter adheres to this standard and operates as a DNP3-L1 compliant master station, which communicates with compliant outstations through TCP/IP.
 
 ![PI Adapter for DNP3 architecture](images/pi-adapter-for-dnp3-architecture-diagram.png)
 
